@@ -7,3 +7,7 @@ test.each([
 ])('Test %s number', (amount, expected) => {
     expect(expected).toBe(clearingNumbers(amount)); 
 });
+
+test.each([4, 'abc'])('Test toThrow with %s inner', (amount) => {
+    expect(() => { clearingNumbers(amount); }).toThrow(Error);
+});
