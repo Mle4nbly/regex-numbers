@@ -1,6 +1,6 @@
 export default function clearingNumbers(number) {
     if (typeof number != "string") {
-        throw TypeError("Ожидалась строка!")
+        throw TypeError("Ожидалась строка!");
     };
 
     const symbolClear = number.replace(/\D/g, '');
